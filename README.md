@@ -1,4 +1,4 @@
-# Title
+# Prompt2: Web&Git Server Environment
 
 ![banner]()
 
@@ -61,4 +61,4 @@ Small note: If editing the Readme, please conform to the [standard-readme](https
 
 ## License
 
-[MIT © Alex Molnar.](../LICENSE)
+[MIT](../LICENSE)
