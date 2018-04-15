@@ -1,4 +1,4 @@
-# Apache2 Web Server & Git Server Environment
+# Apache2 Web Server & Git Server Environment with Docker
 
 > This docker container allows scripts pushed from a Git Server to run automatically on an Apache Web Server via https
 
@@ -27,7 +27,22 @@ background without the user knowing.
 
 ## Install
 
-To install this container do BLAH
+From inside the directory, follow these steps:
+1. Run the start.sh Bash Script to build and instantiate the image
+```
+	$ ./start.sh
+```
+2. Once finished, the user will be given a bash shell inside the container which is hosting the web server and the Git Server
+
+> To run this program, clone this repository, or download the tarball, the directory should include the following items:
+> - Dockerfile
+> - start.sh
+> - README.md
+> - GitServer/
+> - apache2/
+> - cgi-bin/
+> - www/
+
 
 ```
 ```
