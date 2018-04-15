@@ -16,8 +16,16 @@ This environment contains a Git Server and an Apache2 Web Server running with se
 
 ## Security
 
+Default password for all accounts and SSL Key: empiredidnothingwrong
 The Apache Web Server used in this environment is incredibly insecure.
+In order to effectively run Bash and Python scripts automatically from
+the Document Root directory, the Apache2 config file had to be set with a
+very weak security footprint. For example, the root directory allows for
+the execution of any cgi-script or option.
 
+Though, in this setup, the output of the scripts are shown on the webpage,
+it would be trivial to suppress the output and have scripts running in the
+background without the user knowing.
 
 ## Install
 
@@ -28,10 +36,11 @@ To install this container do BLAH
 ## Usage
 
 Example Usage Workflow:
+- 'ps aux' → ps.sh → git push → web server runs ps.sh and displays at localhost:443
 
 1. Create Bash Script on Local GitServer:
 ```
-	$ echo "ps -aux" > example.sh
+	$ echo "ps -aux" > ps.sh
 ```
 2. Make the script executable with the following command:
 ```
@@ -44,11 +53,11 @@ Example Usage Workflow:
 	$ sudo git push admin
 ```
 4. Open a web browser such as Firefox
-5. Type in the following URL: https://localhost
+5. Type in the following URL: https://localhost:443
 6. Watch the output of your script display on the screen!
     
 Note: The WebPage will show the output for all Bash and Python scripts currently located in the document root directory!
 
 ## License
 
-[MIT @ Alex Molnar](LICENSE)
+[MIT @ Alexander Molnar](LICENSE)
