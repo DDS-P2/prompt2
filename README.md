@@ -7,11 +7,8 @@ This environment contains a Git Server and an Apache2 Web Server running with se
 ## Table of Contents
 
 - [Security](#security)
-- [Background](#background)
 - [Install](#install)
 - [Usage](#usage)
-- [API](#api)
-- [Contribute](#contribute)
 - [License](#license)
 
 ## Security
