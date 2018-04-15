@@ -30,17 +30,17 @@ To install this container do BLAH
 Example Usage Workflow:
 
 1. Create Script on Local GitServer
-    a. Create script in GitServer: example.sh
-    b. Use text editor to add the following command: ps -aux
-    c. Make the script executable with the following command: sudo chmod +x example.sh
+a. Create script in GitServer: example.sh
+b. Use text editor to add the following command: ps -aux
+c. Make the script executable with the following command: sudo chmod +x example.sh
 2. Push Script to Remote Repository
-    a. sudo git add example.sh
-    b. sudo git commit -m "My first script"
-    c. sudo git push admin
+a. sudo git add example.sh
+b. sudo git commit -m "My first script"
+c. sudo git push admin
 3. See Script Output on Browser
-    a. Open browser such as Firefox
-    b. Type in the following URL: https://localhost
-    c. Watch the output of your script display on the screen
+a. Open browser such as Firefox
+b. Type in the following URL: https://localhost
+c. Watch the output of your script display on the screen
     
 Note: The WebPage will show the output for all Bash and Python scripts currently located in the document root directory
 
