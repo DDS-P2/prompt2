@@ -30,15 +30,15 @@ To install this container do BLAH
 Example Usage Workflow:
 
 1. Create Bash Script on Local GitServer:
-```sh
+```
 	$ echo "ps -aux" > example.sh
 ```
 2. Make the script executable with the following command:
-```sh
+```
 	$ sudo chmod +x example.sh
 ```
 3. Push Script to Remote Repository
-```sh
+```
 	$ sudo git add example.sh
 	$ sudo git commit -m "My first script"
 	$ sudo git push admin
