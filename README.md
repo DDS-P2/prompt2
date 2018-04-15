@@ -1,10 +1,5 @@
 # Prompt2: Web&Git Server Environment
 
-![banner]()
-
-![badge]()
-![badge]()
-
 > This is an example file with maximal choices selected.
 
 This is a long description.
@@ -61,4 +56,4 @@ Small note: If editing the Readme, please conform to the [standard-readme](https
 
 ## License
 
-[MIT](LICENSE)
+[MIT @ Alex Molnar](LICENSE)
