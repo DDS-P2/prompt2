@@ -13,14 +13,14 @@ This environment contains a Git Server and an Apache2 Web Server running with se
 
 ## Security
 
-Default password for all accounts and SSL Key: empiredidnothingwrong
-The Apache Web Server used in this environment is incredibly insecure.
-In order to effectively run Bash and Python scripts automatically from
+- Default password for all accounts and SSL Key: empiredidnothingwrong
+
+- In order to effectively run Bash and Python scripts automatically from
 the Document Root directory, the Apache2 config file had to be set with a
 very weak security footprint. For example, the root directory allows for
 the execution of any cgi-script or option.
 
-Though, in this setup, the output of the scripts are shown on the webpage,
+- Though, in this setup, the output of the scripts are shown on the webpage,
 it would be trivial to suppress the output and have scripts running in the
 background without the user knowing.
 
