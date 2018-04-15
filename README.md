@@ -32,7 +32,7 @@ From inside the directory, follow these steps:
 ```
 	$ ./start.sh
 ```
-2. Once finished, the user will be given a bash shell inside the container which is hosting the web server and the Git Server
+2. Once finished, the user will be given a bash shell inside the container which is hosting the Web Server and the Git Server
 
 > To run this program, clone this repository, or download the tarball, the directory should include the following items:
 > - Dockerfile
@@ -43,9 +43,6 @@ From inside the directory, follow these steps:
 > - cgi-bin/
 > - www/
 
-
-```
-```
 ## Usage
 
 Example Usage Workflow:
