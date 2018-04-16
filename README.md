@@ -87,8 +87,8 @@ NOTE: The WebPage will show the output for all Bash and Python scripts currently
 
 ## Setup
 - This explains how I configured the environment and is NOT necessary for use
+- These commands are only if you want to know how this was made
 
-General steps I took to create this environment:
 1. Create Local Git Server
 ```
 	$ git init
