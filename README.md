@@ -16,10 +16,16 @@ This environment contains a Git Server and an Apache2 Web Server running with se
 
 - Default password for all accounts and SSL Key: empiredidnothingwrong
 
+- Self signed certificates are located at: 
+```
+	/etc/apache2/ssl/localcerts/apache.pem
+	/etc/apache2/ssl/localcerts/apache.key
+```
+
 - In order to effectively run Bash and Python scripts automatically from
 the Document Root directory, the Apache2 config file had to be set with a
-very weak security footprint. For example, the root directory allows for
-the execution of any cgi-script or option.
+very weak security footprint. For example, the Document Root directory allows for
+the execution of any cgi-script or Option.
 
 - Though, in this setup, the output of the scripts are shown on the webpage,
 it would be trivial to suppress the output and have scripts running in the
@@ -27,10 +33,14 @@ background without the user knowing.
 
 ## Install
 
-From inside the directory, follow these steps:
-1. Run the start.sh Bash Script to build and instantiate the image
+1. First, make sure Docker is installed following the directions found at
+- https://docs.docker.com/install/
+
+2. Next, download and untar the Docker_Environment folder located in this repository
+
+3. From inside the Docker_Environment directory, run start.sh to build and instantiate the image:
 ```
-	$ ./start.sh
+	$ sudo ./start.sh
 ```
 2. Once finished, the user will be given a bash shell inside the container which is hosting the Web Server and the Git Server
 
@@ -43,32 +53,40 @@ From inside the directory, follow these steps:
 > - cgi-bin/
 > - www/
 
-## Usage
+## Web and Git Server Usage Instructions
 
 Example Usage Workflow:
 - 'ps aux' → ps.sh → git push → web server runs ps.sh and displays at localhost:443
 
-1. Create Bash Script on Local GitServer:
+1. Docker should automatically start you in the GitServer directory, but if not, traverse to /home/admin1/GitServer
+2. Once in GitServer/ provide the name and email using the following commands:
+```
+	 git config --global user.name admin
+	 git config --global user.email admin@gmail.com 
+```
+3. Next, create a script here on the local Git Server:
 ```
 	$ echo "ps -aux" > example.sh
 ```
-2. Make the script executable with the following command:
+4. Make the script executable with the following command:
 ```
 	$ sudo chmod +x example.sh
 ```
-3. Push Script to Remote Repository
+5. Push Script to Remote Repository
 ```
 	$ sudo git add example.sh
 	$ sudo git commit -m "My first script"
 	$ sudo git push admin
+	NOTE: admin is the alias used for the remote git repository located in the Apache2 Web Server
 ```
 4. Open a web browser such as Firefox
 5. Type in the following URL: https://localhost:443
 6. Watch the output of your script display on the screen!
     
-Note: The WebPage will show the output for all Bash and Python scripts currently located in the document root directory!
+NOTE: The WebPage will show the output for all Bash and Python scripts currently located in the document root directory!
 
-## Setup
+## Environment Creation Instructions (Not Required For Use)
+- This just explains how I configured Apache2 and the Git Server using CGI scripts and git hooks
 
 General steps I took to create this environment:
 1. Create Local Git Server
