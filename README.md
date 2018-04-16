@@ -9,7 +9,7 @@ This environment contains a Git Server and an Apache2 Web Server running with se
 - [Security](#security)
 - [Install](#install)
 - [Usage](#usage)
-- [Setup]($setup)
+- [Environment Creation (Not Required For Use)]($Environment Creation (Not Required For Use))
 - [License](#license)
 
 ## Security
@@ -53,7 +53,7 @@ background without the user knowing.
 > - cgi-bin/
 > - www/
 
-## Web and Git Server Usage Instructions
+## Usage
 
 Example Usage Workflow:
 - 'ps aux' → ps.sh → git push → web server runs ps.sh and displays at localhost:443
@@ -85,7 +85,7 @@ Example Usage Workflow:
     
 NOTE: The WebPage will show the output for all Bash and Python scripts currently located in the document root directory!
 
-## Environment Creation Instructions (Not Required For Use)
+## Environment Creation (Not Required For Use)
 - This just explains how I configured Apache2 and the Git Server using CGI scripts and git hooks
 
 General steps I took to create this environment:
