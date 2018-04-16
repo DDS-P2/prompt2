@@ -4,18 +4,18 @@
 
 ## USAGE
 This project utilizes Docker and was created on a *Nix* machine. The dependencies required to use this project are:
-    * docker
-    * bash
-    * web browser
+    - docker
+    - bash
+    - web browser
 
 To run this program, clone this repository, or download the tarball. The directory should include the following files and Directories. 
-    * Dockerfile
-    * start.sh 
-    * README.md 
-    * GitServer/
-    * apache2/
-    * cgi-bin/
-    * www/
+    - Dockerfile
+    - start.sh 
+    - README.md 
+    - GitServer/
+    - apache2/
+    - cgi-bin/
+    - www/
 
 - From inside the repository, run the start.sh bash script. This script will build the image, then instantiate it. 
 
