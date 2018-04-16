@@ -9,7 +9,7 @@ This environment contains a Git Server and an Apache2 Web Server running with se
 - [Security](#security)
 - [Install](#install)
 - [Usage](#usage)
-- [Environment Creation](#Environment Creation (Not Required For Use))
+- [Setup](#Setup)
 - [License](#license)
 
 ## Security
@@ -85,8 +85,8 @@ Example Usage Workflow:
     
 NOTE: The WebPage will show the output for all Bash and Python scripts currently located in the document root directory!
 
-## Environment Creation (Not Required For Use)
-- This just explains how I configured Apache2 and the Git Server using CGI scripts and git hooks
+## Setup
+- This explains how I configured the environment and is NOT necessary for use
 
 General steps I took to create this environment:
 1. Create Local Git Server
