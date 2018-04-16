@@ -53,6 +53,8 @@ background without the user knowing.
 > - cgi-bin/
 > - www/
 
+- NOTE: Ubuntu 14.04 is known to have issues running docker containers.
+
 ## Usage
 
 Example Usage Workflow:
