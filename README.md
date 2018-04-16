@@ -9,7 +9,7 @@ This environment contains a Git Server and an Apache2 Web Server running with se
 - [Security](#security)
 - [Install](#install)
 - [Usage](#usage)
-- [Environment Creation (Not Required For Use)]($Environment Creation (Not Required For Use))
+- [Environment Creation](#Environment Creation (Not Required For Use))
 - [License](#license)
 
 ## Security
